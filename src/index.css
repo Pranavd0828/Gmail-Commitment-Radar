@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gmail-bg: #f6f8fc;
+  --color-gmail-surface: #ffffff;
+  --color-gmail-search: #eaf1fb;
+  --color-gmail-nav-selected: #d3e3fd;
+  --color-gmail-compose: #c2e7ff;
+  --color-gmail-text-primary: #202124;
+  --color-gmail-text-secondary: #5f6368;
+  --color-gmail-divider: #e0e0e0;
+  --color-gmail-hover: #f2f6fc;
+  --color-gmail-blue: #1a73e8;
+  --color-risk-low: #188038;
+  --color-risk-medium: #f9ab00;
+  --color-risk-high: #d93025;
+  --color-ai-accent: #5e35b1;
+
+  --font-sans: 'Google Sans', 'Product Sans', 'Roboto', 'Arial', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-gmail-bg);
+    color: var(--color-gmail-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Scrollbar for a more app-like feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}

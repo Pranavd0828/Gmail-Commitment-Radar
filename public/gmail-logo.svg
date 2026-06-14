@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 36" role="img" aria-labelledby="gmail-logo-title">
+  <title id="gmail-logo-title">Gmail</title>
+  <path fill="#fff" d="M4 4h40v28H4z"/>
+  <path fill="#EA4335" d="M4 4h7l13 10L37 4h7v28h-7V13.4L24 23.2 11 13.4V32H4z"/>
+  <path fill="#FBBC04" d="M4 4h7v9.4L4 8z"/>
+  <path fill="#34A853" d="M37 4h7v4l-7 5.4z"/>
+  <path fill="#4285F4" d="M37 13.4 44 8v24h-7z"/>
+  <path fill="#C5221F" d="M4 8 24 23.2 44 8v5.6L24 28.8 4 13.6z" opacity=".22"/>
+</svg>
