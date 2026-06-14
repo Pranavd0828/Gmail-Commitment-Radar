@@ -43,7 +43,7 @@ export const TopBar: React.FC = () => {
         </button>
         <div className="flex items-center">
           <img 
-            src="/gmail-logo.svg" 
+            src={`${import.meta.env.BASE_URL}gmail-logo.svg`} 
             alt="Gmail" 
             className="h-10 ml-1"
           />
