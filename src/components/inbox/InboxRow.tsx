@@ -65,9 +65,9 @@ export const InboxRow: React.FC<{ thread: Thread }> = ({ thread }) => {
     >
       {/* Mobile Layout (< md) */}
       <div className="flex flex-col w-full md:hidden">
-        <div className="flex items-center justify-between mb-1">
-          <div className="flex items-center space-x-2 overflow-hidden pr-2">
-            <span className="truncate flex-shrink">
+        <div className="flex items-center justify-between mb-1 gap-3">
+          <div className="flex items-center space-x-2 overflow-hidden min-w-0 flex-1">
+            <span className="truncate min-w-0">
               {thread.participants.map(p => p.name).join(', ')}
             </span>
             {settings.showInboxBadges && activeCommitment && (
@@ -103,7 +103,7 @@ export const InboxRow: React.FC<{ thread: Thread }> = ({ thread }) => {
 
       {/* Desktop Layout (md+) */}
       <div className="hidden md:flex items-center w-full h-10">
-        <div className="flex items-center w-12 flex-shrink-0 text-gray-400">
+        <div className="flex items-center w-16 flex-shrink-0 text-gray-400">
           <button className="p-1 hover:text-gray-600" aria-label="Select thread" onClick={(e) => e.stopPropagation()}><Square size={18} /></button>
           <button className="p-1 ml-1 hover:text-gray-600" aria-label="Star thread" onClick={(e) => e.stopPropagation()}>
             <Star size={18} className={thread.starred ? "text-yellow-400 fill-yellow-400" : ""} />
